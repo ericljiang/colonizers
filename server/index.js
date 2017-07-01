@@ -49,7 +49,8 @@ var plugins = [
       mongodbUrl: process.env.COLONIZERS_MONGO_URL ||
                   process.env.MONGOLAB_URI ||
                   process.env.MONGOHQ_URL ||
-                  'mongodb://localhost/colonizers'
+                  'mongodb://localhost/colonizers' ||
+                  'mongodb://colonizers:colonizers@ds153669.mlab.com:53669/heroku_w4fg002c'
     }
   },
   {
