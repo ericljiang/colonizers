@@ -12,8 +12,10 @@ var isProd = process.env.NODE_ENV === 'production';
 var server = new Hapi.Server();
 
 server.connection({
-  host: process.env.COLONIZERS_HOST || process.env.HOST || 'localhost',
-  port: process.env.COLONIZERS_PORT || process.env.PORT || 3000,
+  //host: process.env.COLONIZERS_HOST || process.env.HOST || 'localhost',
+  //port: process.env.COLONIZERS_PORT || process.env.PORT || 3000,
+  host: process.env.HOST || 'localhost',
+  port: process.env.PORT,
   routes: {
     validate: {
       options: {
